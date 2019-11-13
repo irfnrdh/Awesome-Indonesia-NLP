@@ -1,13 +1,19 @@
 
-NLP Bahasa Indonesia
+Awesome Indonesia NLP
 ====================
 
-Kumpulan thesis, paper, dan artikel tentang NLP (_Natural Language Processing_) Bahasa Indonesia.
+[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
+
+> Resouse kumpulan dataset, thesis, paper, dan artikel tentang NLP (_Natural Language Processing_) Bahasa Indonesia.
+> Terinpirasi oleh para pendahulu.
 
 ### Daftar Isi
 
 - [NLP Bahasa Indonesia](#nlp-bahasa-indonesia)
     - [Memulai](#memulai)
+        - [Buku](#buku)
+        - [Tutorial](#tutorial)   
+    - [Dataset](#dataset)
     - [Automatic Summarization](#automatic-summarizatio)
     - [Parsing](#parsing)
     - [Part-of-speech Tagging](#part-of-speech-tagging)
@@ -15,33 +21,81 @@ Kumpulan thesis, paper, dan artikel tentang NLP (_Natural Language Processing_) 
     - [Word Sense Disambiguation](#word-sense-disambiguation)
     - [Lain-lain](#lain-lain)
     - [Software, Library, Kamus](#software-library-kamus)
+    - [Dataset Berita Bahasa Indonesia](#Dataset-Berita-Indonesia)
     - [Berkontribusi](#berkontribusi)
 
+Memulai
+=======
 
-# Dataset-Berita-Indonesia
+### Materi Pengantar NLP
 
-- Indonesian News Corpus (https://data.mendeley.com/datasets/2zpbjs22k3/1)
-- INDONESIAN HOAX NEWS DETECTION DATASET (https://data.mendeley.com/datasets/p3hfgr5j3m/1)
-- Warta Berita Online Kompas dan Tempo (https://ilps.science.uva.nl/resources/bahasa/)
-- Raw dataset of Indonesian news articles (https://github.com/feryandi/Dataset-Artikel)
+- [Pengantar NLP](http://lecturer.eepis-its.edu/~kangedi/materi%20kuliah/Kecerdasan%20Buatan/Bab%205%20Natural%20Language%20Processing.pdf) - Kang Edi, PENS.
+- [NLTK Book](http://nltk.org/book)
+- [Text Mining with R - Julia Silge and David Robinson](https://www.tidytextmining.com/)
 
-# Books
-- Hoax dan Hate Speech di Dunia Maya (https://zenodo.org/record/3364834) 
+### Artikel-Artikel Tentang NLP
 
-# Jurnal
+- [Karena Data Gak Mungkin Bohong](https://medium.com/karena-x/karena-data-gak-mungkin-bohong-a17ff90cef87) - Jim Geovedi. 2014.
+- [NLP Trend 2019](https://towardsdatascience.com/major-trends-in-nlp-a-review-of-20-years-of-acl-research-56f5520d473) - Janna, Towards Data Science.
+
+### Jurnal
+
 - Indonesian News Classification using Support Vector Machine (https://zenodo.org/record/1074439)
 
 
-# Indonesian NLP resources
+Dataset & Language modeling
+=======
 
-## Language modeling
+### Words dataset
+1. [Word Sastrawi](https://github.com/sastrawi/sastrawi/tree/master/data)
+1. [Word spaCy](https://github.com/explosion/spaCy/tree/master/spacy/lang/id) : id
+1. [Word name](https://github.com/dominictarr/random-name) : random-name
+1. [Word Indo name](https://github.com/seuriously/genderprediction/blob/master/namatraining.txt) : genderprediction
+1. [Word Indo place](https://github.com/edwardsamuel/Wilayah-Administratif-Indonesia) : Wilayah-Administratif-Indonesia
+1. [Word Indo place](https://github.com/pentagonal/Indonesia-Postal-Code) : Indonesia-Postal-Code
+1. [Word Wiktionary](https://id.wiktionary.org/wiki) : word id
+1. [Word sentiment](https://github.com/ramaprakoso/analisis-sentimen/tree/master/kamus) : analisis-sentimen
+1. [Word sentiment](https://github.com/prasastoadi/ID-OpinionWords) : ID-OpinionWords
+1. [Word sentiment](https://github.com/riochr17/Analisis-Sentimen-ID/tree/master/data) : Analisis-Sentimen-ID
+1. [Word Acronims](https://github.com/ramaprakoso/analisis-sentimen/blob/master/kamus/acronym.txt)
+1. [word](https://github.com/prasastoadi/serangkai/tree/master/serangkai/kamus/data) : serangkai
 
+### Sentences Dataset
+1. [leipzig indonesian sentence collectoin](http://wortschatz.uni-leipzig.de/en/download) news articles, web articles, wikipedia data from 2008-2016
+1. [wn-msa.sourceforge.net](https://sourceforge.net/p/wn-msa/tab/HEAD/tree/trunk/) Wordnet Bahasa
+1. [Quran](http://tanzil.net/trans/id.indonesian) indonesian quran translation (id.muntakhab, id.jalalayn, id.indonesian)
 1. [Kompas online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/kompas.zip).
    This corpus contains [Kompas online](http://www.kompas.com/) news articles from 2001-2002. See
    [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
 1. [Tempo online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/tempo.zip).
    This corpus contains [Tempo online](https://www.tempo.co/) news articles from 2000-2002. See
    [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
+1. [corpus-frog-storytelling](https://github.com/davidmoeljadi/corpus-frog-storytelling) spoken text story telling
+1. [TED-Multilingual-Parallel-Corpus](https://raw.githubusercontent.com/ajinkyakulkarni14/TED-Multilingual-Parallel-Corpus/master/Monolingual_data/Indonesian.txt) Monolingual_data/Indonesian
+1. [Opus](http://opus.nlpl.eu/) Opus NLPL
+1. [Sealang](http://sealang.net/indonesia/) Sealang dataset
+1. [Indonesian News Corpus] (https://data.mendeley.com/datasets/2zpbjs22k3/1)
+1. [INDONESIAN HOAX NEWS DETECTION DATASET] (https://data.mendeley.com/datasets/p3hfgr5j3m/1)
+1. [Warta Berita Online Kompas dan Tempo] (https://ilps.science.uva.nl/resources/bahasa/)
+1. [Raw dataset of Indonesian news articles] (https://github.com/feryandi/Dataset-Artikel)
+1. [Amazon Reviews](https://snap.stanford.edu/data/web-Amazon.html)
+1. [ArXiv](http://arxiv.org/help/bulk_data_s3)
+1. [BimaNLP](https://github.com/drr3d/BimaNLP/tree/old_ver/dataset)
+
+### Tagged dataset
+1. [NER](https://github.com/yohanesgultom/nlp-experiments) : yohanesgultom/nlp-experiments 1700 sentences
+1. [NER](https://github.com/yusufsyaifudin/indonesia-ner) : yusufsyaifudin/indonesia-ner 1835 sentences
+1. [POS-TAG](https://github.com/famrashel/idn-tagged-corpus) : famrashel/idn-tagged-corpus
+1. [POS-TAG](https://github.com/pebbie/pebahasa/blob/master/resource/Corpus.crp) : pebbie/pebahasa ~600 sentence
+1. [POS-TAG Parser](https://github.com/UniversalDependencies/UD_Indonesian-GSD) : UniversalDependencies/UD_Indonesian-GSD ~4477 sentence 
+1. [Sentimen](https://github.com/riochr17/Analisis-Sentimen-ID/blob/master/data/training_all_random.csv) 1506 sentences 
+1. [panl10n](http://www.panl10n.net/english/OutputsIndonesia2.htm) Pan Localization
+
+
+
+## Language modeling
+
+
 
 ## POS tagging
 
@@ -79,17 +133,6 @@ Kumpulan thesis, paper, dan artikel tentang NLP (_Natural Language Processing_) 
 1. [frankydotid/Indonesian-Speech-Recognition](https://github.com/frankydotid/Indonesian-Speech-Recognition).
    A small corpus of 50 utterances by a single male speaker.
 
-
-Memulai
-=======
-
-### Artikel-Artikel Tentang NLP
-
-- [Karena Data Gak Mungkin Bohong](https://medium.com/karena-x/karena-data-gak-mungkin-bohong-a17ff90cef87) - Jim Geovedi. 2014.
-
-### Materi Pengantar NLP
-
-- [Pengantar NLP](http://lecturer.eepis-its.edu/~kangedi/materi%20kuliah/Kecerdasan%20Buatan/Bab%205%20Natural%20Language%20Processing.pdf) - Kang Edi, PENS.
 
 
 Automatic Summarization
@@ -187,20 +230,7 @@ Software, Library, Kamus
 - [Sastrawi](https://github.com/sastrawi/sastrawi) - Stemmer PHP untuk Bahasa Indonesia.
 
 
-# Sentences Dataset
-1. [leipzig indonesian sentence collectoin](http://wortschatz.uni-leipzig.de/en/download) news articles, web articles, wikipedia data from 2008-2016
-1. [wn-msa.sourceforge.net](https://sourceforge.net/p/wn-msa/tab/HEAD/tree/trunk/) Wordnet Bahasa
-1. [Quran](http://tanzil.net/trans/id.indonesian) indonesian quran translation (id.muntakhab, id.jalalayn, id.indonesian)
-1. [Kompas online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/kompas.zip).
-   This corpus contains [Kompas online](http://www.kompas.com/) news articles from 2001-2002. See
-   [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
-1. [Tempo online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/tempo.zip).
-   This corpus contains [Tempo online](https://www.tempo.co/) news articles from 2000-2002. See
-   [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
-1. [corpus-frog-storytelling](https://github.com/davidmoeljadi/corpus-frog-storytelling) spoken text story telling
-1. [TED-Multilingual-Parallel-Corpus](https://raw.githubusercontent.com/ajinkyakulkarni14/TED-Multilingual-Parallel-Corpus/master/Monolingual_data/Indonesian.txt) Monolingual_data/Indonesian
-1. [Opus](http://opus.nlpl.eu/) Opus NLPL
-1. [Sealang](http://sealang.net/indonesia/) Sealang dataset
+
 
 # Word reference (kemdikbud) [link](https://kbbi.kemdikbud.go.id/Beranda/Statistik)
 1. Entri Dasar : 48.748 (44,64 %)
@@ -217,28 +247,9 @@ Software, Library, Kamus
 1. Makna Per Entri : 1,170
 1. Contoh Per Makna : 0,231
 
-# Words dataset
-1. [Word Sastrawi](https://github.com/sastrawi/sastrawi/tree/master/data)
-1. [Word spaCy](https://github.com/explosion/spaCy/tree/master/spacy/lang/id) : id
-1. [Word name](https://github.com/dominictarr/random-name) : random-name
-1. [Word Indo name](https://github.com/seuriously/genderprediction/blob/master/namatraining.txt) : genderprediction
-1. [Word Indo place](https://github.com/edwardsamuel/Wilayah-Administratif-Indonesia) : Wilayah-Administratif-Indonesia
-1. [Word Indo place](https://github.com/pentagonal/Indonesia-Postal-Code) : Indonesia-Postal-Code
-1. [Word Wiktionary](https://id.wiktionary.org/wiki) : word id
-1. [Word sentiment](https://github.com/ramaprakoso/analisis-sentimen/tree/master/kamus) : analisis-sentimen
-1. [Word sentiment](https://github.com/prasastoadi/ID-OpinionWords) : ID-OpinionWords
-1. [Word sentiment](https://github.com/riochr17/Analisis-Sentimen-ID/tree/master/data) : Analisis-Sentimen-ID
-1. [Word Acronims](https://github.com/ramaprakoso/analisis-sentimen/blob/master/kamus/acronym.txt)
-1. [word](https://github.com/prasastoadi/serangkai/tree/master/serangkai/kamus/data) : serangkai
 
-# Tagged dataset
-1. [NER](https://github.com/yohanesgultom/nlp-experiments) : yohanesgultom/nlp-experiments 1700 sentences
-1. [NER](https://github.com/yusufsyaifudin/indonesia-ner) : yusufsyaifudin/indonesia-ner 1835 sentences
-1. [POS-TAG](https://github.com/famrashel/idn-tagged-corpus) : famrashel/idn-tagged-corpus
-1. [POS-TAG](https://github.com/pebbie/pebahasa/blob/master/resource/Corpus.crp) : pebbie/pebahasa ~600 sentence
-1. [POS-TAG Parser](https://github.com/UniversalDependencies/UD_Indonesian-GSD) : UniversalDependencies/UD_Indonesian-GSD ~4477 sentence 
-1. [Sentimen](https://github.com/riochr17/Analisis-Sentimen-ID/blob/master/data/training_all_random.csv) 1506 sentences 
-1. [panl10n](http://www.panl10n.net/english/OutputsIndonesia2.htm) Pan Localization
+
+
 
 # Parallel corpus Eng-Ind
 1. [parallel-corpora-en-id](https://github.com/prasastoadi/parallel-corpora-en-id/)
@@ -256,23 +267,9 @@ Software, Library, Kamus
 1. [Crawler](https://github.com/harryandriyan/warta-scrap) Indonesian news portal
 
 
-# Indonesian NLP resources
 
-## Language modeling
 
-1. [Kompas online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/kompas.zip).
-   This corpus contains [Kompas online](http://www.kompas.com/) news articles from 2001-2002. See
-   [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
-1. [Tempo online collection](http://ilps.science.uva.nl/ilps/wp-content/uploads/sites/6/files/bahasaindonesia/tempo.zip).
-   This corpus contains [Tempo online](https://www.tempo.co/) news articles from 2000-2002. See
-   [here](http://ilps.science.uva.nl/resources/bahasa/) for more info and citations.
 
-## POS tagging
-
-1. [PANL10N POS tagging](http://www.panl10n.net/english/outputs/Indonesia/UI/0802/UI-1M-tagged.zip).
-   This corpus has 39K sentences and 900K word tokens.
-1. [IDN tagged corpus](https://github.com/famrashel/idn-tagged-corpus). This corpus contains
-   10K sentences and 250K word tokens. The POS tags are annotated manually.
 
 ## Sentiment Analysis
 
@@ -331,33 +328,9 @@ Software, Library, Kamus
    A dataset of over 700 different languages providing audio, aligned texts, and word pronunciations.
    One of the languages is Indonesian. The utterances are read from the bible, which is recorded by [bible.is](bible.is).
    
-   # nlp-resources
-A curated list of awesome machine learning frameworks, libraries, courses, books and many more.  
-Star and Fork our repository for latest update.
-
-## Table of Contents
-* **[Free Books](#free-books)**
-
-* **[Courses](#courses)**
-
-* **[Videos and Lectures](#videos-and-lecturers)**
-
-* **[Papers](papers)**
-
-* **[Tutorials](tutorials)**
-
-* **[Sample Code](sample-code)**
-
-* **[Datasets](datasets)**
-
-* **[Conferences](conferences)**
-
-* **[Libraries](libraries)**
-
 
 ### Free Books
-1.	[NLTK Book](http://nltk.org/book)
-2.	[Text Mining with R - Julia Silge and David Robinson](https://www.tidytextmining.com/)
+
 
 ### Courses
 1.	[Natural Language Processing - Coursera](https://www.coursera.org/learn/language-processing)
@@ -391,9 +364,7 @@ Star and Fork our repository for latest update.
 5.	[Naive Bayes Document Classifier (Bahasa Indonesia)](https://github.com/mrrizal/Document_Classifier)
 
 ### Datasets
-1.	[Amazon Reviews](https://snap.stanford.edu/data/web-Amazon.html)
-2.	[ArXiv](http://arxiv.org/help/bulk_data_s3)
-3.	[BimaNLP](https://github.com/drr3d/BimaNLP/tree/old_ver/dataset)
+
 
 ### Libraries
 1.	[NLTK](http://www.nltk.org/)
